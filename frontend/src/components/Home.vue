@@ -45,7 +45,7 @@
 import { api } from '@/helper/api'
 
 export default {
-  name: "Home",
+  name: "Buku",
   data () {
     return {
       data_buku: []
@@ -65,6 +65,17 @@ export default {
       }).catch(err => {
         console.log(err)
       })
+    },
+    deleteData(no_buku){
+        api.delete('buku/'+ no_buku).then(res => {
+            if (res.data.status === 'success') {
+                this.get()
+            } else {
+                console.log(res.data.message)
+            }
+        }).catch(err => {
+            console.log(err)
+        })
     }
   }
 }
