@@ -19,3 +19,7 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Penjelasan Aplikasi
+aplikasi ini merupakan aplikasi tentang buku, fungsinya untuk mengolah data buku yang ada dan apabila stok buku sama dengan 0 maka akan muncul keterangan bahwa stok telah habis.
+untuk databasenya aplikasi ini dibuat menggunakan satu tabel yaitu tabel buku ,bagian frontend nya vue dan bootstrap untuk mempercantik tampilan, dan untuk bagian backend menggunakan lumen
